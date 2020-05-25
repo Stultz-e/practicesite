@@ -10,7 +10,7 @@ module.exports = merge(common, {
 			publicPath: '../'
 		}),
 		new BrowserSyncPlugin({
-			proxy: 'https://starter-test-site.local', //CHANGE TO THE CURRENT .local SITE
+			proxy: 'https://practicesite.local', //CHANGE TO THE CURRENT .local SITE
 			https: true, //Change if needed
 			files: [
 				'wp-content/themes/**/*.css',

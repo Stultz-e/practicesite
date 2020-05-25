@@ -26,31 +26,11 @@
     <?php } ?>
     <?php the_posts_pagination() ?>
     <?php do_action('_practicetheme_after_pagination'); ?>
+    <?php do_action('_practicetheme_after_pagination2'); ?>
 
 
 <?php } else { ?> 
     <p><?php _e('Sorry, no posts matched your criteria.', 'practicetheme'); ?></p>
 <? } ?>
-<?php 
-
-$comments = 1;
-printf(_n('One comment', '%s comments', $comments, 'practicetheme'), $comments);
-
-_ex('Post', 'noun', 'practicetheme');
-
-
-$city = 'london';
-
-
-
-
-printf(
-    /* translators: % is the city name */
-    esc_html( 'Your city is %s', 'firsttheme' ),
-    $city
-);
-
-
-?>
 
 <?php get_footer(); ?>
